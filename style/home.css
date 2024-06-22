@@ -1,0 +1,196 @@
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    max-height: 95vh;
+    margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    /* transition: background-color 0.6s ease; */
+    z-index: 1;
+}
+.mySlides{
+    height: 95vh;
+    width: 100vw;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .9
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .9
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 1;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* strting details of some slide */
+.home-row{
+    margin: 128px 10vw 0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home-in{
+    width: 20vw;
+    height: 20vw;
+    border: 1px solid white;
+    margin-right: 48px;
+}
+.home-row p{
+    width: 50vw;
+}
+.home-row-rev{
+    margin: 128px 10vw 0 10vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.home-row-rev p{
+    width: 50vw;
+}
+.semi-nav{
+    margin-top: 15vh;
+    height: 20vh;
+    width: 80vw;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.semi-nav div{
+    height: 10vh;
+    background-color: rgb(48, 47, 47);
+    width: 25vw;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+    border-radius: 8px;
+}
+/* map */
+.google-map {
+    margin-left: 10vw;
+}
+h1{
+    margin: 128px 0 64px 10vw;
+}
+.google-map iframe {
+    height: 40vh;
+    width: 40vw;
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 8px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 15vh;
+}
+.contact-info{
+    padding-left: 128px;
+    align-self: center;
+}
+/* .map {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+     filter: grayscale(100%);
+} */
+.fa-brands{
+    font-size: 2rem;
+    margin-right: 24px;
+}
+
+@media (max-width: 600px) {
+    .semi-nav{
+        flex-direction: column;
+        height: 320px;
+    }
+    .semi-nav div{
+        width: 80vw;
+        height: 96px;
+        margin-top: 8px;
+        padding-top: 36px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .google-map iframe{
+        width: 80vw;
+    }
+    .contact-info{
+        padding-left: 10vw;
+        padding-top: 24px;
+        padding-bottom: 10vh;
+        align-self: flex-start;
+    }
+}

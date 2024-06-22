@@ -1,0 +1,44 @@
+p{
+    padding: 0;
+    margin: 0;
+}
+.about-container{
+    padding: 20vh 10vw 0 10vw;
+}
+about-info{
+    font-size: 1.2rem;
+}
+.about-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 10vh;
+}
+.about-name{
+    font-size: 3rem;
+    margin-left: 10vw;
+    align-self: flex-end;
+}
+.about-img{
+    height: 20vw;
+    width: 20vw;
+    background-image: url(../image/artist.jpg);
+    background-size:cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .about-intro{
+        flex-direction: column;
+    }
+    .about-name{
+        margin-left: 0;
+        align-self: center;
+        margin-top: 24px;
+    }
+    .about-img{
+        align-self: center;
+        height: 40vw;
+        width: 40vw;
+    }
+}
